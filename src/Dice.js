@@ -70,6 +70,14 @@ export const BLUE = {
   ],
 };
 
-export const ORDER = [
+export const ALL_DICE = [
   'RED', 'YELLOW', 'GREEN', 'BLUE', 'BLACK', 'WHITE',
 ];
+
+export const ATTACK_DICE = [
+  'RED', 'YELLOW', 'GREEN', 'BLUE',
+];
+
+export const DEFENSE_DICE = [
+  'BLACK', 'WHITE',
+]

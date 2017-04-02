@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
 
+import DiceRoller from './DiceRoller';
 import * as dice from './Dice';
+import AddDieButton from './AddDieButton';
 
 import './App.css';
 
@@ -36,27 +38,19 @@ function getFaceDescription(face) {
 }
 
 class App extends Component {
+  constructor() {
+    super();
+
+    this.state = {};
+  }
+
   render() {
-    const rows2 = dice.ORDER.map(key => {
-      const die = dice[key];
-      const faces = die.faces.map((face, i) => {
-        const desc = getFaceDescription(face);
-        console.log(desc);
-        return (
-          <span style={{display: 'inline-block', padding: 5}} >
-            <img style={{margin: 'auto'}} src={`images/${die.imagePrefix}${i+1}.jpg`} alt="" />
-            <br />
-            <span style={{margin: 'auto'}}>{desc}</span>
-          </span>
-        );
-      });
-      return <div>{faces}</div>;
-    });
     return (
       <div>
-        {rows2}
+        <DiceRoller title="ATTACK" colors={dice.ATTACK_DICE} />
+        <DiceRoller title="DEFENSE" colors={dice.DEFENSE_DICE} />
       </div>
-    );
+    )
   }
 }
 
