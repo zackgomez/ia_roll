@@ -5,11 +5,11 @@ import * as dice from './Dice';
 
 import './App.css';
 
-const RESULT_ORDER = ['hit', 'surge', 'accuracy', 'block', 'evade', 'dodge'];
+const RESULT_ORDER = ['damage', 'surge', 'accuracy', 'block', 'evade', 'dodge'];
 
 const RESULT_TO_SYMBOL = {
-  hit: '💥',
-  //hit: '💢',
+  damage: '💥',
+  //damage: '💢',
   surge: '⚡',
   block: '▲',
   evade: '⍉',

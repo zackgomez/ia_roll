@@ -25,23 +25,23 @@ export const BLACK = {
 export const RED = {
   imagePrefix: 'red',
   faces: [
-  {hit: 1},
-  {hit: 2},
-  {hit: 2},
-  {hit: 2, surge: 1},
-  {hit: 3},
-  {hit: 3},
+  {damage: 1},
+  {damage: 2},
+  {damage: 2},
+  {damage: 2, surge: 1},
+  {damage: 3},
+  {damage: 3},
   ],
 };
 
 export const YELLOW = {
   imagePrefix: 'yellow',
   faces: [
-  {hit: 1, surge: 2},
+  {damage: 1, surge: 2},
   {surge: 1},
-  {hit: 1, surge: 1, accuracy: 1},
-  {hit: 2, accuracy: 1},
-  {hit: 1, accuracy: 2},
+  {damage: 1, surge: 1, accuracy: 1},
+  {damage: 2, accuracy: 1},
+  {damage: 1, accuracy: 2},
   {surge: 1, accuracy: 2},
   ],
 };
@@ -49,12 +49,12 @@ export const YELLOW = {
 export const GREEN = {
   imagePrefix: 'green',
   faces: [
-  {hit: 2, accuracy: 1},
-  {hit: 1, surge: 1, accuracy: 1},
+  {damage: 2, accuracy: 1},
+  {damage: 1, surge: 1, accuracy: 1},
   {surge: 1, accuracy: 1},
-  {hit: 1, surge: 1, accuracy: 2},
-  {hit: 2, accuracy: 2},
-  {hit: 2, accuracy: 3},
+  {damage: 1, surge: 1, accuracy: 2},
+  {damage: 2, accuracy: 2},
+  {damage: 2, accuracy: 3},
   ],
 }
 
@@ -62,11 +62,11 @@ export const BLUE = {
   imagePrefix: 'blue',
   faces: [
   {surge: 1, accuracy: 2},
-  {hit: 1, accuracy: 2},
-  {hit: 1, surge: 1, accuracy: 3},
-  {hit: 2, accuracy: 3},
-  {hit: 2, accuracy: 4},
-  {hit: 1, accuracy: 5},
+  {damage: 1, accuracy: 2},
+  {damage: 1, surge: 1, accuracy: 3},
+  {damage: 2, accuracy: 3},
+  {damage: 2, accuracy: 4},
+  {damage: 1, accuracy: 5},
   ],
 };
 
